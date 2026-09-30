@@ -1,6 +1,6 @@
 import re
 import unicodedata
-__version__ = "2.0.0.dev0"
+__version__ = "2.0.0"
 
 def slugify(text: str, sep: str = "-", max_len: int | None = None) -> str:
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
